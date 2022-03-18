@@ -1,0 +1,28 @@
+.detail-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto 0;
+
+  .detail-infor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    margin-left: 3rem;
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .movie-score {
+      margin-bottom: 1rem;
+      
+      span {
+        margin-left: .5rem;
+        color: red;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

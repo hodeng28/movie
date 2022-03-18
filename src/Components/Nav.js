@@ -5,6 +5,7 @@ const Nav = () => {
   return (
     <>
       <div className="nav-container">
+        <h1>MOIVE</h1>
         <ul>
           <li>
             <NavLink to="/">현재 상영작</NavLink>
