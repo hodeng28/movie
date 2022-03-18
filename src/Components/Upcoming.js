@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import moviesApi from "../Api/MoviesApi";
+import "./Style/MovieList.scss";
 
 const Upcoming = () => {
   const [movieData, setMovieData] = useState(null);
@@ -23,12 +24,13 @@ const Upcoming = () => {
 
   return (
     <>
-      <ul>
+      <ul className="movie-container">
         {movieData &&
           movieData.map((movie) => {
             return (
               <li key={movie.id}>
                 <img
+                  className="movie-thumnail"
                   alt={movie.original_title}
                   src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}
                 />
