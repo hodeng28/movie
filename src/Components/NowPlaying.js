@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import moviesApi from "../Api/MoviesApi";
 import "./Style/MovieList.scss";
 
@@ -27,13 +28,15 @@ const NowPlaying = () => {
         {movieData &&
           movieData.map((movie) => {
             return (
-              <li key={movie.id}>
-                <img
-                  className="movie-thumnail"
-                  alt={movie.original_title}
-                  src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}
-                />
-              </li>
+              <Link to={`/${movie.id}`} key={`${movie.id}`}>
+                <li key={movie.id}>
+                  <img
+                    className="movie-thumnail"
+                    alt={movie.original_title}
+                    src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}
+                  />
+                </li>
+              </Link>
             );
           })}
       </ul>
