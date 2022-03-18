@@ -1,0 +1,12 @@
+.nav-container {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 1312px;
+    margin: 0 auto;
+
+    li {
+      font-size: 2rem;
+    }
+  }
+}

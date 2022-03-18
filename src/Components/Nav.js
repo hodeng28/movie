@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
+import "./Style/Nav.scss";
 
 const Nav = () => {
   return (
     <>
-      <div>
+      <div className="nav-container">
         <ul>
           <li>
             <NavLink to="/">현재 상영작</NavLink>
