@@ -4,7 +4,7 @@ import "./Style/Nav.scss";
 const Nav = () => {
   return (
     <>
-      <div className="nav-container">
+      <nav className="nav-container">
         <h1>MOIVE</h1>
         <ul>
           <li>
@@ -17,7 +17,7 @@ const Nav = () => {
             <NavLink to="/Popular">인기 상영작</NavLink>
           </li>
         </ul>
-      </div>
+      </nav>
     </>
   );
 };

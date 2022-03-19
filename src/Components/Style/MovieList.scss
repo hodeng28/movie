@@ -4,9 +4,25 @@
   justify-content: center;
   margin-top: 2rem;
 
-  .movie-thumnail {
-    display: flex;
-    border: .5rem solid black;
-    margin: 1rem;
+  figure {
+    margin: 0;
+
+    .movie-thumnail {
+      display: flex;
+      height: 450px;
+      border: .5rem solid black;
+      margin: 1rem 1rem 0.5rem 1rem;
+    }
+
+    figcaption {
+      width: 250px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      text-align: center;
+      overflow:hidden; 
+      text-overflow:ellipsis; 
+      white-space:nowrap;
+    }
   }
+
 }

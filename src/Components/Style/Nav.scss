@@ -1,15 +1,20 @@
 .nav-container {
+  margin: 1rem 0;
+  font-size: 2rem;
   text-align: center;
+  background-color: black;
+  h1 {
+    color: white;
+  }
   ul {
     display: flex;
-    justify-content: space-between;
-    width: 1312px;
+    justify-content: space-around;
     margin: 0 auto;
 
     li {
 
       a {
-        color: black;
+        color: white;
         font-size: 2rem;
 
         &.active {
