@@ -1,11 +1,14 @@
 import Nav from "./Components/Nav";
+import { MovieContextProvider } from "./Context";
 import MainRouter from "./Router/MainRouter";
 
 const App = () => {
   return (
     <>
-      <Nav />
-      <MainRouter />
+      <MovieContextProvider>
+        <Nav />
+        <MainRouter />
+      </MovieContextProvider>
     </>
   );
 };
