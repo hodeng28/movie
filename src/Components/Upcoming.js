@@ -18,11 +18,14 @@ const Upcoming = () => {
           return (
             <Link to={`/${movie.id}`} key={`${movie.id}`}>
               <li key={movie.id}>
-                <img
-                  className="movie-thumnail"
-                  alt={movie.original_title}
-                  src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}
-                />
+                <figure>
+                  <img
+                    className="movie-thumnail"
+                    alt={movie.original_title}
+                    src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}
+                  />
+                  <figcaption>{movie.original_title}</figcaption>
+                </figure>
               </li>
             </Link>
           );
