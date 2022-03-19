@@ -28,8 +28,11 @@ const useAsync = () => {
   const fetchDetailMovie = async (id) => {
     setLoading();
     const movie = await moviesApi.getMovie(id);
-    console.log(movie);
     dispatch({ type: "DETIAL", movie });
+  };
+
+  const clearDetailMovie = () => {
+    dispatch({ type: "CLEAR_DETAIL" });
   };
 
   return [
@@ -38,6 +41,7 @@ const useAsync = () => {
     fetchPopular,
     fetchUpcoming,
     fetchDetailMovie,
+    clearDetailMovie,
   ];
 };
 
