@@ -7,7 +7,15 @@
     margin: 0 auto;
 
     li {
-      font-size: 2rem;
+
+      a {
+        color: black;
+        font-size: 2rem;
+
+        &.active {
+          color: red;
+        }
+      }
     }
   }
 }
