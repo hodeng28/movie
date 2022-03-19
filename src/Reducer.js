@@ -37,6 +37,11 @@ export const movieReducer = (state, action) => {
         detail: action.movie.data,
         loading: false,
       };
+    case "CLEAR_DETAIL":
+      return {
+        ...state,
+        detail: {},
+      };
 
     default:
       throw new Error(`Unhandled action type: ${action.type}`);

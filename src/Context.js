@@ -10,6 +10,7 @@ const MovieContextProvider = ({ children }) => {
     fetchPopular,
     fetchUpcoming,
     fetchDetailMovie,
+    clearDetailMovie,
   ] = useAsync();
 
   const data = {
@@ -18,6 +19,7 @@ const MovieContextProvider = ({ children }) => {
     fetchPopular,
     fetchUpcoming,
     fetchDetailMovie,
+    clearDetailMovie,
   };
 
   return <MovieContext.Provider value={data}>{children}</MovieContext.Provider>;

@@ -5,11 +5,14 @@ import "./Style/Detail.scss";
 
 const Detail = () => {
   const context = useContext(MovieContext);
-  const { state, fetchDetailMovie } = context;
+  const { state, fetchDetailMovie, clearDetailMovie } = context;
   const params = useParams();
 
   useEffect(() => {
     fetchDetailMovie(params.idx);
+    return () => {
+      clearDetailMovie();
+    };
   }, []);
 
   return (
