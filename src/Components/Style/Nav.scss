@@ -1,8 +1,22 @@
 .nav-container {
-  margin: 1rem 0;
+  position: relative;
+  padding: 1rem 0;
   font-size: 2rem;
   text-align: center;
   background-color: black;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: -100vw;
+    bottom: 0;
+    left: -100vw;
+    background-color: black;
+  }
+  
   h1 {
     color: white;
   }
