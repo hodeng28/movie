@@ -16,8 +16,8 @@ const Popular = () => {
       <ul className="movie-container">
         {state.popular?.results?.map((movie) => {
           return (
-            <Link to={`/${movie.id}`} key={`${movie.id}`}>
-              <li key={movie.id}>
+            <li key={`${movie.id}`}>
+              <Link to={`/${movie.id}`}>
                 <figure>
                   <img
                     className="movie-thumnail"
@@ -26,8 +26,8 @@ const Popular = () => {
                   />
                   <figcaption>{movie.original_title}</figcaption>
                 </figure>
-              </li>
-            </Link>
+              </Link>
+            </li>
           );
         })}
       </ul>
