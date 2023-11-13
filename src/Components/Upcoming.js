@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { MovieContext } from "../Context";
+import MovieList from "./MovieList";
 import "./Style/MovieList.scss";
 
 const Upcoming = () => {
@@ -15,20 +15,7 @@ const Upcoming = () => {
     <>
       <ul className="movie-container">
         {state.upcoming?.results?.map((movie) => {
-          return (
-            <li key={`${movie.id}`}>
-              <Link to={`/${movie.id}`}>
-                <figure>
-                  <img
-                    className="movie-thumnail"
-                    alt={movie.original_title}
-                    src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}
-                  />
-                  <figcaption>{movie.original_title}</figcaption>
-                </figure>
-              </Link>
-            </li>
-          );
+          return <MovieList movie={movie} />;
         })}
       </ul>
     </>
