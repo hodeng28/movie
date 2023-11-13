@@ -9,7 +9,7 @@ const Upcoming = () => {
 
   useEffect(() => {
     fetchUpcoming();
-  }, []);
+  }, [fetchUpcoming]);
 
   return (
     <>

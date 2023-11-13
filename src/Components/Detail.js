@@ -13,7 +13,7 @@ const Detail = () => {
     return () => {
       clearDetailMovie();
     };
-  }, []);
+  }, [clearDetailMovie, fetchDetailMovie, params.idx]);
 
   return (
     <>
