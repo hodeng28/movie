@@ -9,7 +9,7 @@ const Popular = () => {
 
   useEffect(() => {
     fetchPopular();
-  }, [fetchPopular]);
+  }, []);
 
   return (
     <>

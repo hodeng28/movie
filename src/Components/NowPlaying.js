@@ -9,7 +9,7 @@ const NowPlaying = () => {
 
   useEffect(() => {
     fetchNowplaying();
-  }, [fetchNowplaying]);
+  }, []);
 
   return (
     <>
